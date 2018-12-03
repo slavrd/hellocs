@@ -11,6 +11,6 @@ A simple C# .NetCore project that prints "hello"
 * to run the app - `dotnet run`
 * to build an executable - `dotnet build -r <RID>`
 
-The RID depends on the OS you are building for - [list](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog).
+The RID depends on the OS you are building for - [list](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog) of RIDs.
 
 The compiled application will be placed in ./bin/Debug/netcoreapp2.1/\<RID> folder
