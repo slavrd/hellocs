@@ -1,5 +1,10 @@
-language: generic
+language: csharp
+solution: hellocs.sln
+dotnet: 2.1.500
+script:
 dist: xenial
 sudo: required
+install:
+  - nuget install xunit.runners -Version 1.9.2 -OutputDirectory testrunner
 script:
-  - exit 0
+  - dotnet test
