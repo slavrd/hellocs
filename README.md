@@ -12,13 +12,14 @@ Or if you dont won't to install the .NetCore SDK on your system use the included
 * Install Vagrant - [instructions](https://www.vagrantup.com/downloads.html)
 * In folder vagrant/ run `vagrant up`
 * Login to the machine `vagrant ssh`
-* Clone the project `git clone https://github.com/slavrd/hellocs.git`
+* The project will be in `~/hellocs/` directory
 
 ## Run the project
 
 * to run the app - `dotnet run`
 * to build an executable - `dotnet build -r <RID>`
+* to build an redisitributable executable - `dotnet publish -r <RID>`
 
 The RID depends on the OS you are building for - [list](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog) of RIDs.
 
-The compiled application will be placed in ./bin/Debug/netcoreapp2.1/\<RID> folder
+The compiled application will be placed in ./bin/Debug/netcoreapp2.1/\<RID>/publish folder
