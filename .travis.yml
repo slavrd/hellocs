@@ -1,6 +1,7 @@
 language: csharp
 solution: hellocs.sln
 dotnet: 2.1.500
+mono: none
 script:
 dist: xenial
 sudo: required
