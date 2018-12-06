@@ -22,4 +22,8 @@ Or if you dont won't to install the .NetCore SDK on your system use the included
 
 The RID depends on the OS you are building for - [list](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog) of RIDs.
 
-The compiled application will be placed in ./bin/Debug/netcoreapp2.1/\<RID>/publish folder
+The compiled application will be placed in `./bin/Debug/netcoreapp2.1/<RID>/publish` folder
+
+## Deploy with terraform
+
+In the `terraform` folder is placed a terraform configuration to deploy the application in AWS - [instructions](https://github.com/slavrd/hellocs/blob/master/terraform/README.md)
