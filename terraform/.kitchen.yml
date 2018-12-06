@@ -1,0 +1,33 @@
+---
+driver:
+  name: terraform
+  variable_files:
+    - test.tfvars
+
+provisioner:
+  name: terraform
+
+platforms:
+  - name: ubuntu
+
+verifier:
+  name: terraform
+  format: doc
+  systems:
+
+    - name: aws
+      backend: aws
+      controls:
+        - aws_tests
+
+    - name: default
+      backend: ssh
+      user: ubuntu
+      key_files:
+        - ~/.ssh/aws-general-key.pem
+      hosts_output: public_dns
+      controls:
+        - operating_system
+
+suites:
+  - name: default

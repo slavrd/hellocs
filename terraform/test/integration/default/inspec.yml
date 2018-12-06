@@ -1,0 +1,7 @@
+---
+name: default
+attributes:
+  - name: instance_id
+    type: string
+  - name: ubuntu_ami_id
+    type: string

@@ -3,3 +3,8 @@
 .vscode/
 vagrant/.vagrant
 .DS_Store
+terraform/.terraform
+terraform/*.tfstate*
+terraform/Gemfile.lock
+terraform/.ruby-version
+terraform/.kitchen
