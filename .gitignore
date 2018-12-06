@@ -8,3 +8,4 @@ terraform/*.tfstate*
 terraform/Gemfile.lock
 terraform/.ruby-version
 terraform/.kitchen
+terraform/test.tfvars
