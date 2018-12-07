@@ -1,6 +1,7 @@
 variable "access_key" {
   default = ""
 }
+
 variable "secret_key" {
   default = ""
 }
@@ -8,7 +9,6 @@ variable "secret_key" {
 variable "aws_cred_file_path" {
   default = ""
 }
-
 
 variable "region" {}
 variable "ec2-key-pair-name" {}

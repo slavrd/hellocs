@@ -1,8 +1,8 @@
 provider "aws" {
-  access_key = "${var.access_key}"
-  secret_key = "${var.secret_key}"
+  access_key              = "${var.access_key}"
+  secret_key              = "${var.secret_key}"
   shared_credentials_file = "${var.aws_cred_file_path}"
-  region     = "${var.region}"
+  region                  = "${var.region}"
 }
 
 data "aws_ami" "ubuntu-xenial" {
